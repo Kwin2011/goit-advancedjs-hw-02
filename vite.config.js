@@ -12,7 +12,7 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-      rollupOptions: {
+      rollupOptions: {  
         input: glob.sync('./src/*.html'),
         output: {
           manualChunks(id) {
